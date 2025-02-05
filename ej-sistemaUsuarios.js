@@ -34,9 +34,11 @@ usuarios.push({
     }
 })
 
-mostrarUsuarios(usuarios) {
+function mostrarUsuarios(usuarios) {
     for(let i=0; i < usuarios.length; i++){console.log(usuarios[i])}
 }
+
+mostrarUsuarios(usuarios)
 
 //console.log("Que tipo es: " + typeof tv.getPrecio())
 /*document.getElementById("precio").textContent = tv.getPrecio();
