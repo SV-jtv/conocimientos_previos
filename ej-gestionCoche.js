@@ -1,4 +1,4 @@
-const usuarios = {
+const coche = {
         marca: "Toyota",
         modelo: "Corolla",
         año: 2020,
@@ -12,23 +12,15 @@ const usuarios = {
         recorrer: function (km) {
             console.log(this.marca)
         }
-    }
+}
 
-usuarios.push({
-    nombre: "Alicia",
-    edad: 40, // Edad aprox
-    email: "alicia.vazquez@itb.cat",
-    saludar: function () {
-        console.log(this.nombre)
-    }
-})
-
-function mostrarUsuarios(usuarios) {
+function mostrarUsuarios(coche) {
     let info = ""
-    for(let i=0; i < usuarios.length; i++){
-        info = "Nombre: "+usuarios[i].nombre+", Edad: "+usuarios[i].edad+", Email: "+usuarios[i].email
+    for(let i=0; i < coche.length; i++){
+        info = "Nombre: "+coche[i].nombre+", Edad: "+coche[i].edad+", Email: "+coche[i].email
         console.log(info)
     }
 }
 
-mostrarUsuarios(usuarios);
+mostrarUsuarios(coche);
+coche.forEach(coche => coche.saludar());
