@@ -197,6 +197,5 @@ for (let alumno of alumnos) {
 codigoHTML += "</table>"
 
 document.getElementById("tabla").innerHTML = codigoHTML
-};
-function añadeMedia() { };
-init()
+}
+function añadeMedia() { }
