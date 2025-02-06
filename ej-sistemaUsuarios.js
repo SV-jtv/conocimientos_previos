@@ -4,7 +4,7 @@ const usuarios = [
         edad: 18,
         email: "anonim@gmai.com",
         saludar: function () {
-            console.log(this.nombre)
+            console.log("Hola "+this.nombre)
         }
     },
     {
@@ -12,7 +12,7 @@ const usuarios = [
         edad: 13,
         email: "minona@gmai.com",
         saludar: function () {
-            console.log(this.nombre)
+            console.log("Hola "+this.nombre)
         }
     },
     {
@@ -20,7 +20,7 @@ const usuarios = [
         edad: 45,
         email: "ultra_pep@gmai.com",
         saludar: function () {
-            console.log(this.nombre)
+            console.log("Hola "+this.nombre)
         }
     }
 ]
@@ -30,7 +30,7 @@ usuarios.push({
     edad: 40, // Edad aprox
     email: "alicia.vazquez@itb.cat",
     saludar: function () {
-        console.log(this.nombre)
+        console.log("Hola "+this.nombre)
     }
 })
 
@@ -42,13 +42,5 @@ function mostrarUsuarios(usuarios) {
     }
 }
 
-mostrarUsuarios(usuarios)
-
-//console.log("Que tipo es: " + typeof tv.getPrecio())
-/*document.getElementById("precio").textContent = tv.getPrecio();
-document.getElementById("titular").textContent = tv.getInfo();
-
-console.log(Object.keys(tv));
-console.log(Object.values(tv));
-console.log(Object.entries(tv));*/
-//Ejemplo página 73
+mostrarUsuarios(usuarios);
+usuarios.forEach(usuarios => usuarios.saludar());
