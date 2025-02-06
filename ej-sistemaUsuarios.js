@@ -35,7 +35,11 @@ usuarios.push({
 })
 
 function mostrarUsuarios(usuarios) {
-    for(let i=0; i < usuarios.length; i++){console.log(usuarios[i])}
+    let info = ""
+    for(let i=0; i < usuarios.length; i++){
+        info = "Nombre: "+usuarios[i].nombre+", Edad: "+usuarios[i].edad+", Email: "+usuarios[i].email
+        console.log(info)
+    }
 }
 
 mostrarUsuarios(usuarios)
