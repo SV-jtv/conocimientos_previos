@@ -32,3 +32,21 @@ function filterWords(array){
 console.log(filterWords(["Bob", "Alex", "Zoello"]));
 console.log(filterWords(["León", "Zebra", "Gacela"]));
 console.log(filterWords(["Mercedes", "Bmw", "Audi", "Porche"]));
+
+// Métodos y Funciones del Array
+
+// Map
+let arrayNotas = [5.2, 3.9, 6, 9.75, 7.5, 3]
+let arrayNotasSubidas = arrayNotas.map(nota  => nota + nota * 0.10)
+
+// Reduce
+let arrayNotas2 = [5.2, 3.9, 6, 9.75, 7.5, 3]
+// podríamos omitir el valor inicial 0 para total
+let sumaNotas = arrayNotas.reduce((total,nota)  => total+nota/*,0*/)    // total = 35.35
+
+//Pero también pudo querer obtener la nota más alta
+let maxNota = arrayNotas.reduce((max,nota)  => nota > max ? nota : max)    // max = 9.75
+
+// From
+let arrayNotas3 = [5.2, 3.9, 6, 9.75, 7.5, 3]
+let arrayNotasSubidas2 = Array.from(arrayNotas, nota  => nota + nota * 0.10)
