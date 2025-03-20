@@ -1,3 +1,7 @@
+console.log(localStorage);
+
+document.getElementById("delLocalStorage").addEventListener("click", delLocalStorage());
+
 function addUser(){
     if(localStorage.getItem("usuario") === null){
         let user = {};
@@ -23,4 +27,4 @@ function delLocalStorage(event) {
 };
 
 addUser();
-document.getElementById("delLocalStorage").addEventListener("click", delLocalStorage());
+//delLocalStorage();
